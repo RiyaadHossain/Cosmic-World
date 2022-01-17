@@ -1,0 +1,187 @@
+ /* ##############  Header Section Start  ############## */
+header{
+    background-image: url(../Images/cloud.png);
+    height: 100vh;
+    background-size: cover; 
+    /* Note: Take the full space even its width is small */
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    /* Behaves as overly as recommened */
+    background-repeat: no-repeat;
+}
+
+ nav{
+     height: 80px; /*  [ Note: Set a fix height to your parent nav item ]  */
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .navigation{
+     display: flex;
+ }
+
+ .navigation li{
+     list-style: none;
+     margin: 10px;
+ }
+ 
+ .navigation li a{
+     color: white;
+     text-decoration: none;
+     padding: 15px 10px; 
+     /* Use padding here for better user exp */
+     font-weight: 600;
+ }
+
+ .toggle_icon{
+     display: none;
+     /* For Responsive Menu */
+ }
+ #toggle_option{
+     display: none;
+ }
+ /* ##############  Header Section End  ############## */
+
+
+ /* ##############  Banner Section End  ############## */
+
+.banner{
+    display: grid;  /* [ Note: Grid -- For tag which contain much space in the web page ; -- For the ease of making responsive || Flex --- inner tag ] */
+    grid-template-columns: repeat(2, 1fr);
+
+    height: calc(100vh - 80px); /* To make the total header part 100% vh; Observe- the nav has 80px width */
+
+    min-height: 550px;
+    /* It'll save the layout from breaking when we shrink the screen's size  */
+}
+
+.banner_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; /* To make the btn smaller */
+}
+
+.banner_text h1{
+    font-size: 45px;
+    color: white;
+}
+.banner_text p{
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 20px 0;
+    color: white;
+}
+
+.banner_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_img img{
+    width: 100%; /* Otherwise, it'll take extra space */
+
+}
+
+ /* ##############  Banner Section Start  ############## */
+
+
+/* ##############  Feature Section Start  ############## */
+
+.feature{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;   /* This'll not work properly; To achieve it use margin auto where width property used */
+}
+
+.card{
+    max-width: 500px;   /* Max-width: For Responsive Card Size */ 
+    margin: 0 auto;     /* To centeralize the cards */
+    padding: 26px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.246);
+    border-radius: 6px;
+}
+.card .card_icon{
+    background-color: var(--primary);
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+.card h3{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+    font-size: 25px;
+    margin-top: 6px;
+}
+.card p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.card a{
+    text-decoration: none;
+    color: var(--primary);
+}
+.card a:hover{
+    transform: translateX(1.3);
+}
+
+/* ##############  Feature Section End  ############## */
+
+
+/* ##############  Gallery Section Start  ############## */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.photo img{
+    /* To make it (3 Columns) Responsive as it'll take full width and place side by side */
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+}
+/* ##############  Gallery Section End  ############## */
+
+
+/* ##############  Contact Section Start  ############## */
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.contact_img img{
+    width: 100%;
+}
+.contact .input_field{
+    /* Follow this Standard Style Sheet for Form */
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+    font-family: inherit;
+    outline: none;
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid var(--primary);
+    resize: none;
+}
+.contact .input_field:focus{
+    box-shadow: 0px 0px 20px -5px rgba(230,110,189,0.75);
+}
+/* ##############  Contact Section End  ############## */
+
+
+/* ##############  Footer Section Start  ############## */
+footer{
+    margin-top: 40px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ##############  Footer Section End  ############## */

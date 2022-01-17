@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic World</title>
+
+    <!-- Font Awesome Link -->  <!-- Note: Use CDN File for Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Utilities CSS   [ Note: The lower most style will apply. So, use this following coordinadion ] -->
+    <link rel="stylesheet" href="./CSS/utilities.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Responsive CSS -->   
+    <link rel="stylesheet" href="./CSS/responsive.css">
+</head>
+<body>
+    <!-- ##############  Header Section Start  ############## -->
+    <header>
+        <nav class="container">
+            <div class="logo"> 
+                <img src="./Images/logo.png" alt="">      <!-- [ Note: You also can use "Logo Div" outside of the nav - check the best practice ] -->
+            </div>
+            <input id="toggle_option" type="checkbox">
+            <label for="toggle_option"><i class="fas fa-bars toggle_icon"></i></label>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- [ Note: Generally, use Banner outside "Header". But in here we want the same background in both nav and banner ] -->
+
+        <!-- ##############  Banner Section Start  ############## -->
+        <section class="container">
+            <div class="banner">
+                <div class="banner_text">
+                    <h1>Cartoons And Anime Series Stream Anytime On <span class="colored">Cosmic World</span></h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat iste dolore, provident autem officiis quos, velit ex quod Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet?</p>
+                    <button class="btn">Browse Now</button>
+                </div>
+                <div class="banner_img">
+                    <img src="./Images/banner.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- ##############  Banner Section End  ############## -->
+    </header>
+    <!-- ##############  Header Section End  ############## -->
+
+    <main class="container">
+        <!-- ##############  Feature Section Start  ############## -->
+        <section id="feature">
+            <div class="section_title">
+                <h2>Fea<span class="colored">t</span>ure</h2>
+            </div>
+            <div class="feature">
+                <div class="card">
+                    <i class="fas fa-book card_icon"></i>
+                    <h3>Creative Story</h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cumque consequatur soluta nostrum veritatis sapiente.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-video card_icon"></i>
+                    <h3>4k Support</h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cumque consequatur soluta nostrum veritatis sapiente.</p>
+                    <a href="#">Read More</a> 
+                </div>
+                <div class="card">
+                    <i class="fas fa-star card_icon"></i>
+                    <h3>Super Quality</h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cumque consequatur soluta nostrum veritatis sapiente.</p>
+                    <a href="#">Read More</a> 
+                </div>
+                <div class="card">
+                    <i class="fas fa-lock card_icon"></i>
+                    <h3>Highly Secured</h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cumque consequatur soluta nostrum veritatis sapiente.</p>
+                    <a href="#">Read More</a> 
+                </div>
+            </div>
+        </section>
+        <!-- ##############  Feature Section End  ############## -->
+
+        <!-- ##############  Gallery Section Start  ############## -->
+        <section>
+            <div class="section_title">
+                <h2>Gallery</h2>
+            </div>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="./Images/meena.jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="./Images/godzilla.jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="./Images/jumanji.jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="./Images/images (4).jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="./Images/images (5).jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="./Images/images (6).jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- ##############  Gallery Section End  ############## -->
+
+        <!-- ##############  About Us Section Start  ############## -->
+        <section>
+
+        </section>
+        <!-- ##############  About Us Section End  ############## -->
+
+        <!-- ##############  Contact Section Start  ############## -->
+        <section>
+            <div class="section_title">
+                <h2>Con<span class="colored">t</span>act</h2>
+            </div>
+            <div class="contact">
+                <div class="contact_img">
+                    <img src="./Images/contact.png" alt="">
+                </div>
+                <div class="contact_form">
+                    <form action="">
+                        <input class="input_field" type="text" placeholder="Your Name">
+                        <input class="input_field" type="text" placeholder="Your Email">
+                        <textarea class="input_field" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- ##############  Contact Section End  ############## -->
+    </main>
+
+    <!-- ##############  Footer Section Start  ############## -->
+    <footer>
+        <small> Copyright &copy; All Right Reserved By <span class="colored">Cosmic World</span></small>
+    </footer>
+    <!-- ##############  Footer Section End  ############## -->
+
+    <!-- Font Awesome Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fzff82+8pzHnwA1mQ0dzz9/E0B+ZRizq08yZfya66INZBz86qKTCt9MLU0NCNIgaMJCgeyhujhasnFUsYMsi0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

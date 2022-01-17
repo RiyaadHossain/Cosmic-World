@@ -1,0 +1,62 @@
+/* Google Font  -------- [ Use Google Font Link here for better readablity ] */ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@500;600&display=swap');
+
+/* Style Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --primary: #FF008E;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 30px ; /* [ Use padding to have minimam gap in medium small devices ] */
+}
+
+.section_title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.section_title h2{
+    border-bottom: 3px solid var(--primary);
+    margin: 50px 0;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.btn{
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    background-image: linear-gradient(90deg, #c51375, #FF008E);
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* For Button Aniamtion */
+    box-shadow: 0 7px 0 #af1369 ;
+    position: relative;
+    top: 0;
+}
+
+.btn:active{  /* Button Aniamtion */
+    top: 5px;
+    box-shadow: 0 2px 0 #8d1356 ;
+}
+
+.colored{
+    color: var(--primary);
+}
