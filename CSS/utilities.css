@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth; /* Slowly down to the link whenever press the nav link  --- Observe: set it in the html tag*/
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
