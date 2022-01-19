@@ -1,12 +1,10 @@
  /* ##############  Header Section Start  ############## */
 header{
     background-image: url(../Images/cloud.png);
-    height: 100vh;
-    background-size: cover; 
-    /* Note: Take the full space even its width is small */
+    /* height: 100vh; */
+    background-size: cover; /* Note: Take the full space even its width is small */
     background-color: rgba(0, 0, 0, 0.7);
-    background-blend-mode: overlay;
-    /* Behaves as overly as recommened */
+    background-blend-mode: overlay; /* Behaves as overly -- recommened */
     background-repeat: no-repeat;
 }
 
@@ -23,14 +21,13 @@ header{
 
  .navigation li{
      list-style: none;
-     margin: 10px;
+     margin: 10px;   /* [Observe Here] */
  }
- 
+
  .navigation li a{
      color: white;
      text-decoration: none;
-     padding: 15px 10px; 
-     /* Use padding here for better user exp */
+     padding: 15px 10px; /* [ Use padding here for better user exp ] */
      font-weight: 600;
  }
 
@@ -49,19 +46,20 @@ header{
  /* ##############  Banner Section End  ############## */
 
 .banner{
-    display: grid;  /* [ Note: Grid -- For tag which contain much space in the web page ; -- For the ease of making responsive || Flex --- inner tag ] */
+    display: grid;  
+    /* [ Note: Grid -- For those tags which contain much space in the web page ; -- For the ease of making responsive || Flex --- inner tag ] */
     grid-template-columns: repeat(2, 1fr);
 
-    height: calc(100vh - 80px); /* To make the total header part 100% vh; Observe- the nav has 80px width */
+    height: calc(100vh - 80px); /* To make the total header part 100vh; Observe- the nav has 80px width */
 
     min-height: 550px;
     /* It'll save the layout from breaking when we shrink the screen's size --- Otherwise, the banner content will show in the next section */
 }
 
 .banner_text{
-    display: flex;
+    display: flex; /* [ To centeralize the div horizontally ] */
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     align-items: start; /* To make the btn smaller */
 }
 
@@ -105,6 +103,7 @@ header{
     padding: 26px;
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.246);
     border-radius: 6px;
+    transition: .2s linear;
 }
 .card .card_icon{
     background-color: var(--primary);
@@ -127,9 +126,11 @@ header{
 .card a{
     text-decoration: none;
     color: var(--primary);
+    transform: translateX(0);
 }
-.card a:hover{
-    transform: translateX(1.3);
+.card:hover{
+    transform: scale(1.08);
+    transform: translateY(-8px);
 }
 
 /* ##############  Feature Section End  ############## */
@@ -148,55 +149,6 @@ header{
     object-fit: cover;
     border: 3px solid var(--primary);
 }
-
-/* Border Style */
-.photo{
-    position: relative;
-    overflow: hidden;
-}
-.border{
-    position: absolute;
-    transition: .4s linear;
-    /* background-color: var(--primary); */
-}
-.border.top, .border.bottom{
-    height: 3px;
-    width: 90%;
-}
-.border.left, .bottom.right{
-    height: 210px;
-    width: 3px;
-}
-.border.top{
-    top: 10px;
-    right: 100%;
-}
-.border.bottom{
-    bottom: 10px;
-    left: 100%;
-}
-.border.left{
-    left: 10px;
-    top: 100%;
-}
-.border.right{
-    right: 10px;
-    bottom: 100%;
-}
-
-.photo:hover .border.top{
-    right: 10px;
-}
-.photo:hover .border.bottom{
-    left: 10px;
-}
-.photo:hover .border.left{
-    top: 10px;
-}
-.photo:hover .border.right{
-    bottom: 10px;
-}
-
 /* ##############  Gallery Section End  ############## */
 
 

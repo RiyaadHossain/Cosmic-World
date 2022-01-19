@@ -17,9 +17,9 @@ body{
 }
 
 .container{
-    max-width: 1320px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 0 30px ; /* [ Use padding to have minimam gap in medium small devices ] */
+    padding: 0 30px ; /* [ Use padding to have minimam gap for medium & small devices ] */
 }
 
 .section_title{
