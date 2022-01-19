@@ -103,7 +103,7 @@ header{
     padding: 26px;
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.246);
     border-radius: 6px;
-    transition: .2s linear;
+    transition: .36s linear;
 }
 .card .card_icon{
     background-color: var(--primary);
@@ -132,7 +132,10 @@ header{
     transform: scale(1.08);
     transform: translateY(-8px);
 }
-
+.card:hover .card_icon{
+    color: black;
+    transform: scale(1.06);
+}
 /* ##############  Feature Section End  ############## */
 
 
@@ -163,7 +166,7 @@ header{
 }
 /* You Can use the following style to centeralize the Button */
 .contact_form form{
-    display: flex;
+    display: flex;  /* It'll centeralize the button  */
     flex-direction: column;
     align-items: center;
 }
@@ -171,7 +174,7 @@ header{
     /* Note: Follow this Standard Style Sheet for Form */
 
     /* display: flex;  */
-    /* ---- If you style the form then you don't need to set flex here. But the button will place the left side ---- */
+    /* ---- If you flex the form then you don't need to set flex here. But the button will place on the center ---- */
     width: 100%;
     font-size: 18px;
     font-family: inherit;

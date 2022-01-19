@@ -48,6 +48,12 @@
 }
 
 @media (max-width:690px) {
+    .banner_text h1{
+        font-size: 30px;
+    }
+    .banner_text p{
+        font-size: 18px;
+    }
     .feature, .gallery{
         grid-template-columns: 1fr;
     }
