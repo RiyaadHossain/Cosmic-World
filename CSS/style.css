@@ -21,15 +21,30 @@ header{
 
  .navigation li{
      list-style: none;
-     margin: 10px;   /* [Observe Here] */
+     margin: 14px;   /* [Observe Here] */
  }
 
  .navigation li a{
      color: white;
      text-decoration: none;
-     padding: 15px 10px; /* [ Use padding here for better user exp ] */
+     padding: 6px 6px; /* [ Use padding here for better user exp ] */
      font-weight: 600;
+    position: relative;
  }
+ .navigation li a::after{
+    height: 3px;
+    width: 0;
+    background-color: var(--primary);
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    border-radius: 5px;
+    transition: .5s;
+}
+.navigation>li>a:hover::after{
+    width: 100%;
+}
 
 /* ------For Responsive Menu------- */
  .nav_toggler_icon{
@@ -153,6 +168,42 @@ header{
     border: 3px solid var(--primary);
 }
 /* ##############  Gallery Section End  ############## */
+
+
+/* ##############  About Us Section Start  ############## */
+.about{
+    display: grid;  
+    /* [ Note: Grid -- For those tags which contain much space in the web page ; -- For the ease of making responsive || Flex --- inner tag ] */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.about_text{
+    display: flex; /* [ To centeralize the div horizontally ] */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: start; /* To make the btn smaller */
+}
+
+.about_text h1{
+    font-size: 45px;
+}
+.about_text p{
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.about_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_img img{
+    width: 100%; /* Otherwise, it'll take extra space */about
+}
+/* ##############  About Us Section End  ############## */
 
 
 /* ##############  Contact Section Start  ############## */

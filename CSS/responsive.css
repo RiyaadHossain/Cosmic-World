@@ -1,11 +1,11 @@
 @media (max-width:985px) {
-    .gallery{
+    .gallery, .about{
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width:895px) {
-    .banner_text h1{
+    .banner_text h1, .about_text h1{
         font-size: 35px;
     }
 
@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
-    transform: translateY(-314.6px);
+    transform: translateY(-354.6px);
     transition: .3s ease-in-out;
 }
  
@@ -30,11 +30,11 @@
  #nav_toggler:checked ~ .navigation{
     transform: translateY(0px);
  }
- .banner{
+ .banner, .about{
     grid-template-columns: 1fr;
     height: fit-content;  /* It'll take the banner's content fit in the total height -- support to stop breaking the layout */
     }
-    .banner_text{
+    .banner_text, .about_text{
      order: 2;
      margin-top: 40px;
      padding-bottom: 20px;
@@ -48,13 +48,13 @@
 }
 
 @media (max-width:690px) {
-    .banner_text h1{
+    .banner_text h1, .about_text h1{
         font-size: 30px;
     }
-    .banner_text p{
+    .banner_text p, .about_text h1{
         font-size: 18px;
     }
-    .feature, .gallery{
+    .feature, .gallery, .about{
         grid-template-columns: 1fr;
     }
 }
