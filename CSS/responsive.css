@@ -9,40 +9,35 @@
         font-size: 35px;
     }
 
-    /* Nav Toggle Menu */
-    .navigation{
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: rgba(116, 4, 60, 0.972);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        transform: translateY(-340px);
-        transition: .5s linear;
-    }
-    .toggle_icon{
-        display: block;
-        font-size: 24px;
-        color: #fff;
-    }
-    
- #toggle_option:checked ~ .navigation{
-    display: block;
-    transform: translateY(0px);
+  /* Nav Toggle Menu */
+ .nav_toggler_icon{
+    display: block; 
+ }
+.navigation{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(161, 7, 84, 0.966);
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
+    transform: translateY(-314.6px);
+    transition: .3s ease-in-out;
+}
+ 
+    
+ #nav_toggler:checked ~ .navigation{
+    transform: translateY(0px);
  }
  .banner{
     grid-template-columns: 1fr;
-    height: fit-content;  /* Really Important Tag */
+    height: fit-content;  /* It'll take the banner's content fit in the total height -- support to stop breaking the layout */
     }
     .banner_text{
      order: 2;
      margin-top: 40px;
+     padding-bottom: 20px;
     }
 }
 

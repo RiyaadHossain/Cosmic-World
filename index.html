@@ -25,8 +25,10 @@
             <div class="logo"> 
                 <img src="./Images/logo.png" alt="">      <!-- [ Note: You also can use "Logo Div" outside of the nav - check the best practice ] -->
             </div>
-            <input id="toggle_option" type="checkbox">
-            <label for="toggle_option"><i class="fas fa-bars toggle_icon"></i></label>
+            <input id="nav_toggler" type="checkbox">
+            <label class="nav_toggler_icon" for="nav_toggler">
+                <i class="fas fa-bars"></i>
+            </label>
             <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Feature</a></li>
@@ -97,6 +99,10 @@
             </div>
             <div class="gallery">
                 <div class="photo">
+                    <div class="border top"></div>
+                    <div class="border bottom"></div>
+                    <div class="border left"></div>
+                    <div class="border right"></div>
                     <img src="./Images/meena.jpg" alt="">
                 </div>
                 <div class="photo">
@@ -138,7 +144,7 @@
                         <input class="input_field" type="text" placeholder="Your Name">
                         <input class="input_field" type="text" placeholder="Your Email">
                         <textarea class="input_field" cols="30" rows="10" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn">Send Message</button>
+                        <button type="submit" class="btn contact_btn">Send Message</button>
                     </form>
                 </div>
             </div>

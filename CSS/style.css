@@ -34,11 +34,13 @@ header{
      font-weight: 600;
  }
 
- .toggle_icon{
-     display: none;
-     /* For Responsive Menu */
+/* ------For Responsive Menu------- */
+ .nav_toggler_icon{
+    display: none;
+    font-size: 25px;
+    color: #fff;
  }
- #toggle_option{
+ #nav_toggler{
      display: none;
  }
  /* ##############  Header Section End  ############## */
@@ -53,7 +55,7 @@ header{
     height: calc(100vh - 80px); /* To make the total header part 100% vh; Observe- the nav has 80px width */
 
     min-height: 550px;
-    /* It'll save the layout from breaking when we shrink the screen's size  */
+    /* It'll save the layout from breaking when we shrink the screen's size --- Otherwise, the banner content will show in the next section */
 }
 
 .banner_text{
@@ -146,6 +148,55 @@ header{
     object-fit: cover;
     border: 3px solid var(--primary);
 }
+
+/* Border Style */
+.photo{
+    position: relative;
+    overflow: hidden;
+}
+.border{
+    position: absolute;
+    transition: .4s linear;
+    /* background-color: var(--primary); */
+}
+.border.top, .border.bottom{
+    height: 3px;
+    width: 90%;
+}
+.border.left, .bottom.right{
+    height: 210px;
+    width: 3px;
+}
+.border.top{
+    top: 10px;
+    right: 100%;
+}
+.border.bottom{
+    bottom: 10px;
+    left: 100%;
+}
+.border.left{
+    left: 10px;
+    top: 100%;
+}
+.border.right{
+    right: 10px;
+    bottom: 100%;
+}
+
+.photo:hover .border.top{
+    right: 10px;
+}
+.photo:hover .border.bottom{
+    left: 10px;
+}
+.photo:hover .border.left{
+    top: 10px;
+}
+.photo:hover .border.right{
+    bottom: 10px;
+}
+
 /* ##############  Gallery Section End  ############## */
 
 
@@ -158,20 +209,31 @@ header{
 .contact_img img{
     width: 100%;
 }
-.contact .input_field{
-    /* Follow this Standard Style Sheet for Form */
+/* You Can use the following style to centeralize the Button */
+.contact_form form{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .input_field{
+    /* Note: Follow this Standard Style Sheet for Form */
+
+    /* display: flex;  */
+    /* ---- If you style the form then you don't need to set flex here. But the button will place the left side ---- */
     width: 100%;
     font-size: 18px;
     font-family: inherit;
     outline: none;
-    margin: 15px 0;
+    margin: 10px 0;
     padding: 10px;
     border: 1px solid var(--primary);
     resize: none;
 }
 .contact .input_field:focus{
     box-shadow: 0px 0px 20px -5px rgba(230,110,189,0.75);
+}
+.contact_btn{
+    text-align: center;
 }
 /* ##############  Contact Section End  ############## */
 
