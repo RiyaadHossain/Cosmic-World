@@ -9,7 +9,7 @@
 }
 
 html{
-    scroll-behavior: smooth; /* Slowly down to the link whenever press the nav link  --- Observe: set it in the html tag*/
+    scroll-behavior: smooth; /* Slowly down to the link whenever press the nav link  --- Observe: set it in the html tag */
 }
 
 body{
@@ -52,7 +52,7 @@ body{
 
     /* For Button Aniamtion */
     box-shadow: 0 7px 0 #af1369 ;
-    position: relative;
+    position: relative; /* To achieve the Animation - top[0] */
     top: 0;
 }
 

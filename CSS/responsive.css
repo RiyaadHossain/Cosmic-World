@@ -1,5 +1,5 @@
 @media (max-width:985px) {
-    .gallery, .about{
+    .gallery{
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -25,19 +25,20 @@
     transform: translateY(-354.6px);
     transition: .3s ease-in-out;
 }
- 
-    
- #nav_toggler:checked ~ .navigation{
+
+#nav_toggler:checked ~ .navigation{
     transform: translateY(0px);
- }
- .banner, .about{
+}
+    
+
+.banner, .about{
     grid-template-columns: 1fr;
     height: fit-content;  /* It'll take the banner's content fit in the total height -- support to stop breaking the layout */
     }
     .banner_text, .about_text{
      order: 2;
      margin-top: 40px;
-     padding-bottom: 20px;
+     padding-bottom: 35px;
     }
 }
 
@@ -51,10 +52,10 @@
     .banner_text h1, .about_text h1{
         font-size: 30px;
     }
-    .banner_text p, .about_text h1{
+    .banner_text p, .about_text p{
         font-size: 18px;
     }
-    .feature, .gallery, .about{
+    .feature, .gallery{
         grid-template-columns: 1fr;
     }
 }

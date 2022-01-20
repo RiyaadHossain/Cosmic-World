@@ -8,30 +8,32 @@ header{
     background-repeat: no-repeat;
 }
 
- nav{
-     height: 80px; /*  [ Note: Set a fix height to your parent nav item ]  */
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
+nav{
+    height: 80px; /*  [ Note: Set a fix height in nav tag ]  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
- .navigation{
-     display: flex;
- }
+.navigation{
+    display: flex;
+}
 
- .navigation li{
-     list-style: none;
-     margin: 14px;   /* [Observe Here] */
- }
+.navigation li{
+    list-style: none;
+    margin: 14px;   /* [Observe Here] */
+}
 
- .navigation li a{
-     color: white;
-     text-decoration: none;
-     padding: 6px 6px; /* [ Use padding here for better user exp ] */
-     font-weight: 600;
+.navigation li a{
+    color: white;
+    text-decoration: none;
+    padding: 6px 6px; /* [ Use padding here for better user exp ] */
+    font-weight: 600;
     position: relative;
- }
- .navigation li a::after{
+}
+
+/* Nav Item Hover Effect */
+.navigation li a::after{
     height: 3px;
     width: 0;
     background-color: var(--primary);
@@ -100,7 +102,7 @@ header{
 
 }
 
- /* ##############  Banner Section Start  ############## */
+/* ##############  Banner Section Start  ############## */
 
 
 /* ##############  Feature Section Start  ############## */
@@ -109,7 +111,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    justify-content: center;   /* This'll not work properly; To achieve it use margin auto where width property used */
+    justify-content: center;   /* This'll not work properly; To achieve it use margin auto where width property is used */
 }
 
 .card{
@@ -201,7 +203,7 @@ header{
 }
 
 .about_img img{
-    width: 100%; /* Otherwise, it'll take extra space */about
+    width: 100%; /* Otherwise, it'll take extra space */
 }
 /* ##############  About Us Section End  ############## */
 
@@ -211,6 +213,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    align-items: center;
 }
 .contact_img img{
     width: 100%;
@@ -225,7 +228,7 @@ header{
     /* Note: Follow this Standard Style Sheet for Form */
 
     /* display: flex;  */
-    /* ---- If you flex the form then you don't need to set flex here. But the button will place on the center ---- */
+    /* ---- If you flex the form then you don't need to set flex here. But the button won't place on the center ---- */
     width: 100%;
     font-size: 18px;
     font-family: inherit;
@@ -237,9 +240,6 @@ header{
 }
 .contact .input_field:focus{
     box-shadow: 0px 0px 20px -5px rgba(230,110,189,0.75);
-}
-.contact_btn{
-    text-align: center;
 }
 /* ##############  Contact Section End  ############## */
 
